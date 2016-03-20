@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="ReSA specification plugins" url="https://github.com/nasmdh/ReSA-Tool-0.0">
+      Requirements specification in ReSA language tailored to automotive systems development. The language renders natural language words syntax, and readability.
+   </description>
+   <feature url="features/org.volvo.eastadl.features_1.0.0.201603201709.jar" id="org.volvo.eastadl.features" version="1.0.0.201603201709">
+      <category name="eastadlid"/>
+   </feature>
+   <feature url="features/org.volvo.resadsl.feaures_1.0.0.201603201709.jar" id="org.volvo.resadsl.feaures" version="1.0.0.201603201709">
+      <category name="resaid"/>
+   </feature>
+   <category-def name="resaid" label="ReSA specification plugins"/>
+   <category-def name="eastadlid" label="ReSA-EASTADL specification plugin">
+      <description>
+         ReSA specification support for EAST-ADL levels of abstraction.
+      </description>
+   </category-def>
+</site>
