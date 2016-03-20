@@ -1,0 +1,38 @@
+/*************************************************************************************************
+ * Design-level requirements specification:
+ * At design-level, a system model is conceptualized using Functional Design Architecture (FDA).
+ * The architecture consists of design function. For example, for ASL:
+ * 		- Activate (ACT), RSLC, EMC
+ *************************************************************************************************/
+ 
+/* 
+ * vehicle-level requirements can be written at design-level
+ */
+req asl_req001:
+	action# "ASL":vf shall be "enabled":verbState;
+endreq
+
+/* 
+ * analysis-level requirements can be written at design-level
+ */
+req asl_req002:
+	action# "RSLM":vf shall "notify":verbDriver driver;
+endreq
+
+/*
+ * design-level requirements specification
+ */
+ req asl_req002:
+ 	if event#"fault affecting RSL controller":event occurs; and
+		comparison# "ultTargetSpd.value":ffp is  in the range [1, 5];
+	then
+		status# "Error":status shall be "displayed":verbStatus; 
+			while state# "the fault":event is in state "active":state;
+	elseif state# "ultTargetSpd.request":fp equal to "active":state; and
+		state# "RSL controller":dft is "activated":verbState;
+	then 
+		status# "active":status shall be "displayed":verbStatus;
+	else
+		status# "inactive":status shall be displayed;
+	endif
+ endreq

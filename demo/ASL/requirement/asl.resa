@@ -1,0 +1,61 @@
+req asl_req001:
+ 	if interaction# driver "selects":verbMode "ASL speed control mode":mode; and
+ 		(mode# vehicle is in mode "pre-running":mode; or
+ 		mode# vehicle is in mode "running":mode;)
+ 	then
+ 		action# "ASL":system shall be "enabled":verbState; and
+ 		status# "ASL enable status":status shall be "presented to the":verbStatus;
+ 	endif
+endreq
+
+req asl_req002: 
+	if interaction# driver "makes":verbParameter "INCREASE request":parameter; or
+  		interaction# driver "makes":verbParameter "DECREASE request":parameter; or
+  		interaction# driver "makes":verbParameter "RESUME request":parameter; and 
+  		action#"ASL set speed":parameter is  "erased":verbParameter;  
+  	then
+  		action# "ASL":system shall be "activated":verbSystem;
+  		//assignment# "p":parameter shall be set to "min":function of {"5ms" "6ms"};
+	endif
+endreq
+
+
+
+/* DEACTIVATING ASL 
+ * At any time during this use case when the ASL is active, the driver makes a PAUSE request or exits vehicle mode running. 
+ * The ASL function stops to limit the vehicle speed. The indication of the ASL active status is replaced with the ASL enabled status. 
+ * The ASL switches in the enable state. 
+ */
+ req asl_req003: 
+ 	 if state# "ASL":system is "actived":verbState; then 
+ 	 	//<consequent> 
+ 	 endif
+ endreq
+
+/*
+ * If ASL is active and the driver presses PAUSE button or vehicle exits vehicle mode running, 
+ * the ASL function stops to limit the vehicle speed. 
+ * The indication of the ASL active status is replaced with the ASL enabled status. 
+ * The ASL switches to the enable state.
+ * 
+*/
+req asl_req004:
+	if state# "ASL":system is "active":verbState; and 
+		(interaction# driver "presses":verbInDevice "PAUSE button":inDevice; or
+		mode#  vehicle is in mode "running":mode;)
+	then
+		notification# "indication of ASL active status" :outDevice shall 
+						"display":verbStatus "ASL enable status":status;
+	endif
+endreq
+/*
+ * E2E_SpeedCtrl_Req-192 v25. DISABLING ASL 
+ * At any time during the use case, the driver selects speed control mode OFF or CC or ACC. 
+ * The ASL function stops to limit the vehicle speed. The indication of the ASL active status or enabled status is removed. 
+*/
+ req asl_req004: 
+ 	 if state# "ASL":system is "actived":verbState; then 
+ 	 	//<consequent> 
+ 	 endif
+ endreq
+

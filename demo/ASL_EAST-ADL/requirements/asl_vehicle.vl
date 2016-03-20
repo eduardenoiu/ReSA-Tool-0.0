@@ -1,0 +1,9 @@
+req asl_req001:
+ 	if interaction# driver "selects":verbMode "ASL speed control mode":mode; and
+ 		(mode# vehicle is in mode "pre-running":mode; or
+ 		mode# vehicle is in mode "running":mode;)
+ 	then
+ 		action# "ASL":vf shall be "enabled":verbState; and
+ 		status# "ASL enable status":status shall be "presented to the":verbStatus;
+ 	endif
+endreq
