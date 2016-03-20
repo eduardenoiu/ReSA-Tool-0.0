@@ -5,17 +5,17 @@ Installation
 
 1. Download ReSA-Tool plugins (ZIP format) from https://github.com/nasmdh/ReSA-Tool-0.0.git
 
-2. Unzip the file, and store in locally
+2. Unzip the file, and store the plugin locally
 
 3. Run Eclipse IDE, and Click "Install New Software..." Help->Install New Software...
 
-4. Press "Add" button in order to add the plugins from the local site. Give the site a name, like resa-update-plugins, and press "Local" to fid the root location for the downloaded plugins.
+4. Press "Add" button in order to add the plugins from Local. Give the site a name, like resa-update-plugins, and press "Local" to find the root location for the downloaded plugins.
 
 5. Finally install the plugins
 
-A brief Tutorial.
+**You may download Demo from https://github.com/nasmdh/ReSA-Tool-0.0.git
 
-The demo is located at https://github.com/nasmdh/ReSA-Tool-0.0.git. 
+A brief Tutorial
 
 1. Create an empty project. 
   File->New->Project. In the Select Wizard, select General->Project
@@ -40,5 +40,6 @@ The demo is located at https://github.com/nasmdh/ReSA-Tool-0.0.git.
 Pre-requisite: Jre must be installed in the host computer before executing the tool.
 
 Your feedback is invaluable!! Thank for trying out the tool.
+
 
 nesredin <nesredin.mahmud@mdh.se>
