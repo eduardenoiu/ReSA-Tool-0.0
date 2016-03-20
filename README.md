@@ -37,7 +37,7 @@ A brief Tutorial
 
 4. Press Ctr + <Space> to check for completion of text, and see what valid completion are there at the point of pressing.
   
-Pre-requisite: Jre must be installed in the host computer before executing the tool.
+Prerequisite: Jre must be installed in the host computer before executing the tool.
 
 Your feedback is invaluable!! Thank for trying out the tool.
 
