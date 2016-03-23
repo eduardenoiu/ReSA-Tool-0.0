@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="ReSA specification plugins" url="https://github.com/nasmdh/ReSA-Tool-0.0">
+   <description name="ReSA specification plugins" url="https://github.com/nasmdh/ReSA-Tool-0.0/tree/master/resadsl-plugins">
       Requirements specification in ReSA language tailored to automotive systems development. The language renders natural language words syntax, and readability.
    </description>
    <feature url="features/org.volvo.eastadl.features_1.0.0.201603201709.jar" id="org.volvo.eastadl.features" version="1.0.0.201603201709">
