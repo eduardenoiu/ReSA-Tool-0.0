@@ -1,5 +1,5 @@
 # ReSA-Tool- VeriDevOps Edition
-ReSA Tool is a prototype for requirements specification in constrained natural language in the domain of automotive systems development. It renders natural language terms (words, phrases), and syntax, which gives readability of requirements specification. Moreover, it uses boilerplate to structure the construction of requirements specification. - See more at: https://marketplace.eclipse.org/content/resa-tool#sthash.6B9FZqZG.dpuf
+ReSA Tool is a prototype for requirements specification in constrained natural language in the domain of automotive systems development. It renders natural language terms (words, phrases), and syntax, which gives readability of requirements specification. Moreover, it uses boilerplate to structure the construction of requirements specification.
 
 Installation
 
