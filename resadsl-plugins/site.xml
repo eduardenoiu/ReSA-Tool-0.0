@@ -8,7 +8,7 @@
    </feature>
    <feature url="features/org.volvo.resadsl.feaures_1.0.0.201603201709.jar" id="org.volvo.resadsl.feaures" version="1.0.0.201603201709">
       <category name="resaid"/>
-   </feature>
+   </feature> 
    <category-def name="resaid" label="ReSA specification plugins"/>
    <category-def name="eastadlid" label="ReSA-EASTADL specification plugin">
       <description>
