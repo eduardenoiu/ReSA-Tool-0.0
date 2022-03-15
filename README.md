@@ -1,9 +1,9 @@
-# ReSA-Tool-0.0
+# ReSA-Tool- VeriDevOps Edition
 ReSA Tool is a prototype for requirements specification in constrained natural language in the domain of automotive systems development. It renders natural language terms (words, phrases), and syntax, which gives readability of requirements specification. Moreover, it uses boilerplate to structure the construction of requirements specification. - See more at: https://marketplace.eclipse.org/content/resa-tool#sthash.6B9FZqZG.dpuf
 
 Installation
 
-1. Download ReSA-Tool plugins (ZIP format) from https://github.com/nasmdh/ReSA-Tool-0.0.git
+1. Download ReSA-Tool plugins (ZIP format).
 
 2. Unzip the file, and store the plugin locally
 
@@ -11,9 +11,7 @@ Installation
 
 4. Press "Add" button in order to add the plugins from Local. Give the site a name, like resa-update-plugins, and press "Local" to find the root location for the downloaded plugins.
 
-5. Finally install the plugins
-
-**You may download Demo from https://github.com/nasmdh/ReSA-Tool-0.0.git
+5. Install the plugins
 
 A brief Tutorial
 
@@ -39,7 +37,3 @@ A brief Tutorial
   
 Prerequisite: Jre must be installed in the host computer before executing the tool.
 
-Your feedback is invaluable!! Thank for trying out the tool.
-
-
-nesredin <nesredin.mahmud@mdh.se>
